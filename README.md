@@ -18,3 +18,52 @@ This is a web application designed to manage a warehouse's inventory, built with
 - Database: PostgreSQL
 - Frontend: Vue.js
 - Deployment: Docker, Digital Ocean
+
+## Project Tree
+```
+portfolio
+├─ 📁.vscode
+│  ├─ 📄launch.json
+│  └─ 📄settings.json
+├─ 📁src
+│  ├─ 📁main
+│  │  ├─ 📁java
+│  │  │  └─ 📁com
+│  │  │     ├─ 📁costco
+│  │  │     │  ├─ 📁config
+│  │  │     │  │  └─ 📄WebConfig.java
+│  │  │     │  ├─ 📁controller
+│  │  │     │  │  ├─ 📄CategoryController.java
+│  │  │     │  │  ├─ 📄InventoryController.java
+│  │  │     │  │  ├─ 📄ProductController.java
+│  │  │     │  │  └─ 📄UserController.java
+│  │  │     │  ├─ 📁exception
+│  │  │     │  │  └─ 📄ResourceNotFoundException.java
+│  │  │     │  ├─ 📁model
+│  │  │     │  │  ├─ 📄Category.java
+│  │  │     │  │  ├─ 📄Inventory.java
+│  │  │     │  │  ├─ 📄Product.java
+│  │  │     │  │  └─ 📄User.java
+│  │  │     │  ├─ 📁repository
+│  │  │     │  │  ├─ 📄CategoryRepository.java
+│  │  │     │  │  ├─ 📄InventoryRepository.java
+│  │  │     │  │  ├─ 📄ProductRepository.java
+│  │  │     │  │  └─ 📄UserRepository.java
+│  │  │     │  └─ 📁service
+│  │  │     │     ├─ 📄CategoryService.java
+│  │  │     │     ├─ 📄InventoryService.java
+│  │  │     │     ├─ 📄ProductService.java
+│  │  │     │     └─ 📄UserService.java
+│  │  │     └─ 📄CostcoApplication.java
+│  │  └─ 📁resources
+│  │     └─ 📄application.properties
+│  └─ 📁test
+│     └─ 📁java
+│        └─ 📁com
+│           └─ 📁example
+│              └─ 📄AppTest.java
+├─ 📁target
+├─ 📄.gitignore
+├─ 📄pom.xml
+└─ 📄README.md
+```
