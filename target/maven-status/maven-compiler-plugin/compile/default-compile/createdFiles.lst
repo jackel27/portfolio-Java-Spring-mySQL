@@ -1,0 +1,17 @@
+com\costco\model\User.class
+com\costco\repository\ProductRepository.class
+com\costco\model\Inventory.class
+com\costco\repository\CategoryRepository.class
+com\costco\repository\InventoryRepository.class
+com\costco\model\Product.class
+com\CostcoApplication.class
+com\costco\controller\CategoryController.class
+com\costco\controller\InventoryController.class
+com\costco\controller\UserController.class
+com\costco\service\CategoryService.class
+com\costco\service\UserService.class
+com\costco\model\Category.class
+com\costco\service\InventoryService.class
+com\costco\repository\UserRepository.class
+com\costco\service\ProductService.class
+com\costco\controller\ProductController.class

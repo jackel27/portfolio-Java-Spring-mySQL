@@ -1,12 +1,12 @@
 // src/main/java/com/costco/controller/CategoryController.java
-// this controller is for the category model. controllers are used to handle requests and responses.
+
 package com.costco.controller;
 
 import com.costco.model.Category;
 import com.costco.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.http.ResponseEntity;
+
 import java.util.List;
 
 @RestController
@@ -32,13 +32,12 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public Category updateCategory(@PathVariable Long id, @RequestBody Category category) {
-        return categoryService.updateCategory(id, category);
+    public Category updateCategory(@PathVariable Long id, @RequestBody Category categoryDetails){
+        return categoryService.updateCategory(id, categoryDetails);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteCategory(@PathVariable Long id){
+    public void deleteCategory(@PathVariable Long id){
         categoryService.deleteCategory(id);
-        return ResponseEntity.ok().build();
     }
 }

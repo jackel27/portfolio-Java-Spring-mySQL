@@ -1,6 +1,4 @@
 // src/main/java/com/costco/model/Category.java
-// this model is for the category model. models are used to define the structure of the data.
-// similiar to javascript where you define a class to create objects. with the model you can create objects so to speak.
 package com.costco.model;
 
 import javax.persistence.*;
@@ -15,16 +13,31 @@ public class Category {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     private List<Product> products;
-          public String getName() {
-    return this.name;
-}
+
+    @Transient
+    private int productsCount;
+
+    // getters and setters...
+
+    public String getName() {
+        return this.name;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
+
     public Long getId() {
         return this.id;
+    }
+
+    public List<Product> getProducts() {
+        return this.products;
+    }
+
+    public int getProductsCount() {
+        return (products != null) ? products.size() : 0;
     }
 }
