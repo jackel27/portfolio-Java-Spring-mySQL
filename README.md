@@ -4,7 +4,7 @@ This is a web application designed to manage a warehouse's inventory, built with
 
 ## Front-End
 - Here is the front-end that will communicate with this Management System
-- ```link https://github.com/jackel27/Front-End_portfolio-Java-Spring-mySQL```
+- ```https://github.com/jackel27/Front-End_portfolio-Java-Spring-mySQL```
 
 ## Key Features
 - Management of product inventory in a warehouse
