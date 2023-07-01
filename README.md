@@ -1,6 +1,6 @@
 # Inventory Management System
 
-This is a web application designed to manage a warehouse's inventory, built with Java, Spring Boot, and Vue.js. It demonstrates an understanding of databases, ability to comprehend business needs, and developing user interfaces. The project has been created specifically for showcasing my skills for my portfolio so I can increase my chances at landing a job in the IT world.
+This is a web application designed to manage a warehouse's inventory, built with Java, Spring Boot, and Vue.js. It demonstrates an understanding of databases, ability to comprehend business needs, and developing user interfaces. The project has been created specifically for showcasing my skills for my portfolio so I can increase my chances at landing a job in the IT world. It's somewhat basic, built only for illustration purposes.
 
 ## Front-End
 - Here is the front-end that will communicate with this Management System
